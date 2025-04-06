@@ -1,0 +1,26 @@
+{
+  "name": "mcp-web-extractor",
+  "version": "1.0.0",
+  "description": "MCP server that extracts web content using Readability.js",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node-esm index.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/typescript-sdk": "latest",
+    "@mozilla/readability": "^0.5.0",
+    "express": "^4.18.2",
+    "jsdom": "^22.1.0",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/jsdom": "^21.1.6",
+    "@types/node": "^20.10.4",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.3"
+  }
+}
